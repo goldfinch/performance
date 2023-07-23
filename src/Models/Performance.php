@@ -1,6 +1,6 @@
 <?php
 
-namespace Goldfinch\Models;
+namespace Goldfinch\Performance\Models;
 
 use SilverStripe\ORM\DataObject;
 use SilverStripe\Security\Permission;
