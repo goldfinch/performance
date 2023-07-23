@@ -1,8 +1,8 @@
 <?php
 
-namespace Goldfinch\Admin;
+namespace Goldfinch\Performance\Admin;
 
-use Goldfinch\Models\Performance;
+use Goldfinch\Performance\Models\Performance;
 use SilverStripe\Admin\ModelAdmin;
 use SilverStripe\Forms\GridField\GridFieldConfig;
 use SilverStripe\Forms\GridField\GridFieldPrintButton;
