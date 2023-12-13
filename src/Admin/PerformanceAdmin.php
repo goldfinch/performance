@@ -23,7 +23,7 @@ class PerformanceAdmin extends ModelAdmin
 
     private static $menu_priority = 0;
 
-    private static $menu_icon_class = 'bi-speedometer';
+    private static $menu_icon_class = 'font-icon-rocket';
 
     public $showImportForm = true;
 

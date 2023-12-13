@@ -1,3 +1,14 @@
 ---
 Name: goldfinch-performance
 ---
+
+
+---
+Name: goldfinch-performance-icon
+Only:
+  moduleexists: 'goldfinch/enchantment'
+---
+
+Goldfinch\Performance\Admin\PerformanceAdmin:
+  icon: 'bi-speedometer'
+
