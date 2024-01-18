@@ -2,8 +2,8 @@
 
 namespace Goldfinch\Performance\Admin;
 
-use Goldfinch\Performance\Models\Performance;
 use SilverStripe\Admin\ModelAdmin;
+use Goldfinch\Performance\Models\Performance;
 use SilverStripe\Forms\GridField\GridFieldConfig;
 use SilverStripe\Forms\GridField\GridFieldPrintButton;
 use SilverStripe\Forms\GridField\GridFieldExportButton;
@@ -31,24 +31,6 @@ class PerformanceAdmin extends ModelAdmin
 
     private static $page_length = 30;
 
-    public function getList()
-    {
-        $list =  parent::getList();
-
-        // ..
-
-        return $list;
-    }
-
-    public function getSearchContext()
-    {
-        $context = parent::getSearchContext();
-
-        // ..
-
-        return $context;
-    }
-
     protected function getGridFieldConfig(): GridFieldConfig
     {
         $config = parent::getGridFieldConfig();
@@ -58,22 +40,5 @@ class PerformanceAdmin extends ModelAdmin
         $config->removeComponentsByType(GridFieldImportButton::class);
 
         return $config;
-    }
-
-    public function getEditForm($id = null, $fields = null)
-    {
-        $form = parent::getEditForm($id, $fields);
-
-        // ..
-
-        return $form;
-    }
-
-    public function getExportFields()
-    {
-        return [
-            // 'Name' => 'Name',
-            // 'Category.Title' => 'Category'
-        ];
     }
 }
